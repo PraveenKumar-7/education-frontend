@@ -19,9 +19,19 @@ export default function Register() {
   const handleChange = (e) => setForm({...form, [e.target.name]: e.target.value});
 
   return (
+    <Box
+      sx={{
+         width: "100vw",             
+        height: "100vh",             
+        display: "flex",
+        justifyContent: "center",    
+        alignItems: "center",        
+        background: "linear-gradient(135deg, #2196f3 30%, #21cbf3 90%)",
+      }}
+    >
     <Container maxWidth="sm" sx={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
       <Card sx={{ width: "100%", p: 4, boxShadow: 5, borderRadius: 2 }}>
-        <Typography variant="h4" textAlign="center" sx={{ mb: 3 }}>
+        <Typography variant="h4" textAlign="center" sx={{ mb: 3, color: "#1976d2", fontWeight: "bold" }}>
           Create Account
         </Typography>
 
@@ -64,5 +74,6 @@ export default function Register() {
 
       </Card>
     </Container>
+    </Box>
   );
 }
